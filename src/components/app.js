@@ -1,8 +1,14 @@
 import React from 'react'
-import SearchBar from './search-bar/search-bar'
+import { Provider } from 'react-redux'
+import configureStore from '../redux/store'
+import Search from './search/search'
+
+const store = configureStore()
 
 const App = () => (
-  <SearchBar />
+  <Provider store={store}>
+    <Search />
+  </Provider>
 )
 
 export default App

@@ -1,12 +1,13 @@
 import React from 'react'
 import { SearchBarWrapper, StyledForm, SearchInput, SearchButton } from './search-bar.styles'
 
-const SearchBar = () => {
+const SearchBar = ({ startSearch }) => {
   let formRef = null
 
   const submitSearch = ev => {
     ev.preventDefault()
     console.log(formRef.elements.search.value)
+    startSearch(formRef.elements.search.value)
   }
 
   return (
