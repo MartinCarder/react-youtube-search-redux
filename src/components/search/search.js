@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import { searchRequested } from '../../redux/actions/search'
 import SearchBar from './search-bar/search-bar'
 import SearchResults from './search-results/search-results'
+import VideoModal from './video-modal/video-modal'
 
 export class Search extends PureComponent {
   state = {
@@ -13,12 +14,18 @@ export class Search extends PureComponent {
     this.setState({ selectedId })
   }
 
+  closeModal = () => {
+    this.selectVideo(null)
+  }
+
   render() {
     const { startSearch, results } = this.props
+    const { selectedId } = this.state
     return (
       <div>
         <SearchBar startSearch={startSearch} />
         <SearchResults results={results} selectVideo={this.selectVideo} />
+        <VideoModal selectedId={selectedId} closeModal={this.closeModal} />
       </div>
     )
   }
