@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<VideoItem> component renders correctly 1`] = `
+.c0 {
+  -webkit-flex: 0 0 33.33%;
+  -ms-flex: 0 0 33.33%;
+  flex: 0 0 33.33%;
+  box-sizing: border-box;
+  padding: 7px 5px;
+  width: 33.33%;
+  overflow: hidden;
+  position: relative;
+}
+
+.c2 {
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('image');
+}
+
+.c2:after {
+  content: '';
+  display: block;
+  padding-top: 56.2%;
+}
+
+.c1 {
+  padding: 2px;
+  height: 100%;
+  cursor: pointer;
+}
+
+.c1:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  z-index: -1;
+  margin: 7px 5px;
+}
+
+.c3 {
+  font-weight: bold;
+  font-size: 17px;
+  text-align: center;
+  color: #167ac6;
+  margin: 15px;
+}
+
+.c4 {
+  font-size: 13px;
+  margin: 0 15px 15px 15px;
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <div
+      class="c2"
+    >
+      
+    </div>
+    <h5
+      class="c3"
+    >
+      Another cat video
+    </h5>
+    <p
+      class="c4"
+    >
+      Cats cats cats!!
+    </p>
+  </div>
+</div>
+`;
