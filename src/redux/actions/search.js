@@ -7,8 +7,8 @@ export const searchRequested = searchQuery => {
   return dispatch => {
     return youtubeSearch(searchQuery)
       .then(data => dispatch(searchSuccess(data)))
-      .catch(() => {
-        dispatch(searchFailed())
+      .catch(err => {
+        dispatch(searchFailed(err))
       })
   }
 }
